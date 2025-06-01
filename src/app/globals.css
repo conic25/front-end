@@ -12,31 +12,31 @@
 /* tailwindCSS에서 해당 color들을 사용할 수 있도록 변경 */
 /* :root에 선언된 애들을 사용하고 있어서 그대로 뒀습니다. 아래와 같이 @theme에 선언해주면 tailwindcss처럼 사용할 수 있어서 @theme도 만들었습니다. */
 @theme {
-  --color-gray-10: #F9FAFB;
-  --color-gray-20: #E9EBEF;
-  --color-gray-30: #C5C6CD;
-  --color-gray-40: #999BA5;
-  --color-gray-50: #6F717C;
+  --color-gray-10: #f9fafb;
+  --color-gray-20: #e9ebef;
+  --color-gray-30: #c5c6cd;
+  --color-gray-40: #999ba5;
+  --color-gray-50: #6f717c;
   --color-white: #ffffff;
-  --color-black: #1E1E1E;
+  --color-black: #1e1e1e;
 
-  --color-conic-red-10: #FFE0E1;
-  --color-conic-red-20: #FFAEB1;
-  --color-conic-red-30: #FF363C;
-  --color-conic-red-40: #E4070E;
-  --color-conic-red-50: #AD0F14;
+  --color-conic-red-10: #ffe0e1;
+  --color-conic-red-20: #ffaeb1;
+  --color-conic-red-30: #ff363c;
+  --color-conic-red-40: #e4070e;
+  --color-conic-red-50: #ad0f14;
 
-  --color-conic-orange-10: #FFE4D6;
-  --color-conic-orange-20: #FFB794;
-  --color-conic-orange-30: #FF8345;
-  --color-conic-orange-40: #EF641F;
-  --color-conic-orange-50: #B0430C;
+  --color-conic-orange-10: #ffe4d6;
+  --color-conic-orange-20: #ffb794;
+  --color-conic-orange-30: #ff8345;
+  --color-conic-orange-40: #ef641f;
+  --color-conic-orange-50: #b0430c;
 
-  --color-conic-blue-10: #D6E0FF;
-  --color-conic-blue-20: #99B1FF;
-  --color-conic-blue-30: #4D76FF;
-  --color-conic-blue-40: #2651DF;
-  --color-conic-blue-50: #1233A1;
+  --color-conic-blue-10: #d6e0ff;
+  --color-conic-blue-20: #99b1ff;
+  --color-conic-blue-30: #4d76ff;
+  --color-conic-blue-40: #2651df;
+  --color-conic-blue-50: #1233a1;
 
   --shadow-middlemodal: 0px 4px 50px 0px #0000000d;
   --shadow-location-search: 0px 4px 28px 0px #0000000d;
@@ -73,8 +73,8 @@
 /* 전역 폰트 스타일 */
 body {
   font-family: Pretendard, 'Pretendard Variable', sans-serif;
-  background-color: #F9FAFB;
-  color: #1E1E1E;
+  background-color: #f9fafb;
+  color: #1e1e1e;
 }
 
 /* 스크롤 바 */
@@ -90,7 +90,7 @@ body {
 
 /* 스크롤바 핸들 (움직이는 부분) */
 ::-webkit-scrollbar-thumb {
-  background: #C5C6CD;
+  background: #c5c6cd;
   border-radius: 999px;
 }
 
@@ -204,9 +204,9 @@ body {
   gap: 8px;
   flex-shrink: 0;
   border-radius: 16px;
-  background: #FF363C;
+  background: #ff363c;
 
-  color: #FFF;
+  color: #fff;
   text-align: center;
   /* Button_lg */
   font-family: Pretendard, serif;
