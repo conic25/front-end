@@ -22,6 +22,7 @@
     "@storybook/addon-docs": "^9.0.3",
     "@storybook/addon-onboarding": "^9.0.3",
     "@storybook/addon-vitest": "^9.0.3",
+    "@storybook/nextjs": "^9.0.3",
     "@storybook/nextjs-vite": "^9.0.3",
     "@tailwindcss/postcss": "^4.1.8",
     "@types/node": "^20",

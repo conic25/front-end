@@ -1,8 +1,8 @@
 // Button.stories.tsx
-import type { Meta, StoryObj } from '@storybook/react';
-import Button1, {Button1Props} from "@/components/common/Button1";
+import type { Meta, StoryObj } from '@storybook/nextjs';
+import Button1 from "@/components/common/Button1";
 
-const meta: Meta<typeof Button1Props> = {
+const meta: Meta = {
     title: 'Components/Button',
     component: Button1,
     argTypes: {
@@ -22,7 +22,7 @@ const meta: Meta<typeof Button1Props> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Button1Props>;
+type Story = StoryObj;
 
 export const Default: Story = {
     args: {

@@ -1,5 +1,4 @@
 import Button1 from "@/components/common/Button1";
-import Image from "next/image";
 
 export default function Home() {
   return (
