@@ -26,9 +26,9 @@ type Story = StoryObj
 
 export const Default: Story = {
   args: {
-    label: '버튼',
-    type: 'ghost',
-    size: 'md',
-    status: 'disabled',
+    children: '버튼',
+    styleType: 'ghost',
+    styleSize: 'md',
+    styleStatus: 'disabled',
   },
 }
