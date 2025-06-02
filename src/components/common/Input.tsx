@@ -15,6 +15,7 @@ interface InputProps {
   leftIcon?: React.ReactNode
   placeholder?: string
   type?: 'text' | 'password' | 'email' | 'tel'
+  customClassName?: string
 }
 
 const Input = ({
@@ -25,14 +26,15 @@ const Input = ({
   leftIcon,
   placeholder,
   type = 'text',
+  customClassName,
 }: InputProps) => {
-  const inputBoxBase = 'border flex gap-x-5xs p-2xs rounded-[16px] items-center'
-  const inputFieldBase = 'body1 w-full outline-none'
+  const inputBoxBase = 'border flex gap-x-5xs p-2xs rounded-[16px] items-center bg-white'
+  const inputFieldBase = 'body1 w-full outline-none bg-white'
 
   const inputBoxStyleClassName = inputBoxStyles[inputBoxStyle]
 
   return (
-    <div className={`${inputBoxBase} ${inputBoxStyleClassName}`}>
+    <div className={`${inputBoxBase} ${inputBoxStyleClassName} ${customClassName}`}>
       {leftIcon ? leftIcon : null}
       <div className="flex w-full justify-between">
         <input

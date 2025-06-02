@@ -48,6 +48,8 @@ export interface Button1Props {
   onClick: () => void
   buttonType?: 'button' | 'submit'
   disabled?: boolean
+  rightIcon?: ReactNode
+  leftIcon?: ReactNode
 }
 
 const Button1 = ({
@@ -59,15 +61,19 @@ const Button1 = ({
   onClick,
   buttonType = 'button',
   disabled = false,
+  rightIcon,
+  leftIcon,
 }: Button1Props) => {
-  const base = 'rounded cursor-pointer'
+  const base = 'flex gap-x-2 items-center justify-center rounded cursor-pointer'
   const variantClass = variantStyles[styleType][styleStatus]
   const sizeClass = sizeStyles[styleSize]
   const className = [base, variantClass, sizeClass].join(' ')
 
   return (
     <button disabled={disabled} type={buttonType} onClick={onClick} className={`${className} ${customClassName}`}>
+      {leftIcon ? leftIcon : null}
       {children}
+      {rightIcon ? rightIcon : null}
     </button>
   )
 }
