@@ -122,16 +122,6 @@ body {
   letter-spacing: -0.4px;
 }
 
-@utility title-lg {
-  /* title-lg */
-  font-family: Pretendard, serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 36px */
-  letter-spacing: -0.36px;
-}
-
 @utility sub1 {
   font-family: Pretendard, serif;
   font-size: 18px;

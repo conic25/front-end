@@ -5,16 +5,19 @@ import Header from '@/components/common/Header'
 import { useState } from 'react'
 import Input from '@/components/common/Input'
 import { UnCheckboxIcon } from '@/assets/svgComponents'
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
   const [signupType, setSignupType] = useState<'개인회원' | '기업회원'>('개인회원')
+  const router = useRouter()
+
   return (
     <main className="bg-gray-10 flex min-h-screen items-center justify-center">
       <Header />
       <div className="flex flex-col items-center justify-center">
         <div className="w-[600px]">
           <section className="gap-y-2xs flex flex-col items-center justify-center">
-            <h1 className="title-lg">로그인</h1>
+            <h1 className="h2">로그인</h1>
             <div className="rounded-[12px] bg-white">
               <Button1
                 onClick={() => {
@@ -82,7 +85,14 @@ export default function Home() {
 
           <section className="mt-l gap-x-3xs flex items-center justify-center">
             <p className="body-sm text-gray-50">아직 Conic의 회원이 아닌가요?</p>
-            <Button1 onClick={() => {}} styleSize={'sm'} styleStatus={'click'} styleType={'outline2'}>
+            <Button1
+              onClick={() => {
+                router.push('/sign-up')
+              }}
+              styleSize={'sm'}
+              styleStatus={'click'}
+              styleType={'outline2'}
+            >
               회원가입
             </Button1>
           </section>
